@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shallow Water Earth Observation Laboratory – Infrastructure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Optional: small tweak for instrument images -->
+  <style>
+    .instrument-image {
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+      border-radius: 0.6rem;
+      margin-bottom: 0.6rem;
+      border: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container site-header">
+      <div>
+        <div class="site-title">Shallow Water Earth Observation Laboratory</div>
+        <div class="site-subtitle">
+          Infrastructure · Department of Geography, Environment and Geomatics, University of Ottawa
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Main</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="infrastructure.html" class="active">Infrastructure</a></li>
+          <li><a href="network.html">Network</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Instruments &amp; Sensors</h2>
+      <p class="section-intro">
+        Instruments and field equipment used for radiometry, imaging, and supporting measurements
+        in our shallow-water research.
+      </p>
+      <div class="card-grid">
+        <!-- Cubert S185 SE FireFleye -->
+        <article class="card">
+          <img
+            src="images/cubert.jpg"
+            alt="Cubert S185 SE FireFleye hyperspectral camera"
+            class="instrument-image">
+          <h3>Cubert S185 SE FireFleye hyperspectral camera</h3>
+          <p>
+            A snapshot hyperspectral sensor used to collect high-resolution spectral data over
+            shallow-water and coastal environments. The camera supports calibration and validation
+            of satellite-derived products for bathymetry, habitat mapping, and water quality.
+          </p>
+        </article>
+
+        <!-- DJI Matrice 600 Pro -->
+        <article class="card">
+          <img
+            src="images/dji600.jpg"
+            alt="DJI Matrice 600 Pro drone"
+            class="instrument-image">
+          <h3>DJI Matrice 600 Pro</h3>
+          <p>
+            A heavy-lift UAV platform used to carry the hyperspectral camera and other payloads.
+            The Matrice 600 Pro enables flexible, repeatable acquisitions over study sites to
+            support algorithm development and validation.
+          </p>
+        </article>
+
+        <!-- Ocean Optics dual-channel spectrometer -->
+        <article class="card">
+          <img
+            src="images/spectrometer.jpg"
+            alt="Ocean Optics dual-channel spectrometer"
+            class="instrument-image">
+          <h3>Ocean Optics dual-channel spectrometer</h3>
+          <p>
+            A dual-channel spectrometer used for in&nbsp;situ radiometric measurements, including
+            water-leaving radiance and downwelling irradiance. These data support the calibration
+            and validation of satellite and airborne observations.
+          </p>
+        </article>
+
+        <!-- Inflatable boat -->
+        <article class="card">
+          <img
+            src="images/boat.jpg"
+            alt="Inflatable boat used for fieldwork"
+            class="instrument-image">
+          <h3>Inflatable boat</h3>
+          <p>
+            A stable inflatable boat used for field campaigns in shallow and nearshore waters.
+            The boat provides a platform for deploying radiometric instruments, conducting
+            water-quality sampling, and supporting ground-truth surveys for satellite missions.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Computing resources</h2>
+      <p class="section-intro">
+        The lab operates a dedicated server that supports large-scale image processing, modelling,
+        and collaboration with external partners.
+      </p>
+      <ul>
+        <li>
+          A Windows server with 48 CPU cores, two GPUs, 512&nbsp;GB of RAM, and more than 15&nbsp;TB of storage,
+          providing the capacity needed for intensive satellite and airborne image analysis.
+        </li>
+        <li>
+          The server hosts all of the software required for the lab’s workflows, from image
+          pre-processing and machine learning to visualization and dissemination.
+        </li>
+        <li>
+          Centralized storage and software environments facilitate smooth collaboration with
+          external research partners by simplifying data sharing and reproducible workflows.
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Shallow Water Earth Observation Laboratory</div>
+      <div>Infrastructure</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
