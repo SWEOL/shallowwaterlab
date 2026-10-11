@@ -2,37 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shallow Water Earth Observation Laboratory – Infrastructure</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
+  <title>Infrastructure | Shallow Water Earth Observation Laboratory</title>
+  <meta name="description" content="Field instruments, drones, spectrometers and computing resources used by the Shallow Water Earth Observation Laboratory at the University of Ottawa for aquatic remote sensing.">
+  <link rel="canonical" href="https://shallowwaterlab.com/infrastructure.html">
+  <meta name="theme-color" content="#0b7285">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <!-- Optional: small tweak for instrument images -->
-  <style>
-    .instrument-image {
-      width: 100%;
-      max-height: 180px;
-      object-fit: cover;
-      border-radius: 0.6rem;
-      margin-bottom: 0.6rem;
-      border: 1px solid var(--border);
-    }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shallow Water Earth Observation Laboratory">
+  <meta property="og:title" content="Infrastructure – Shallow Water Earth Observation Laboratory">
+  <meta property="og:description" content="Field instruments, drones, spectrometers and computing resources used by the Shallow Water Earth Observation Laboratory at the University of Ottawa for aquatic remote sensing.">
+  <meta property="og:url" content="https://shallowwaterlab.com/infrastructure.html">
+  <meta property="og:image" content="https://shallowwaterlab.com/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Shallow Water Earth Observation Laboratory, University of Ottawa">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Infrastructure – Shallow Water Earth Observation Laboratory">
+  <meta name="twitter:description" content="Field instruments, drones, spectrometers and computing resources used by the Shallow Water Earth Observation Laboratory at the University of Ottawa for aquatic remote sensing.">
+  <meta name="twitter:image" content="https://shallowwaterlab.com/images/og-image.jpg">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <div class="container site-header">
-      <div>
-        <div class="site-title">Shallow Water Earth Observation Laboratory</div>
-        <div class="site-subtitle">
-          Infrastructure · Department of Geography, Environment and Geomatics, University of Ottawa
-        </div>
+      <div class="site-brand">
+        <a href="index.html" class="site-title">Shallow Water Earth Observation Laboratory</a>
+        <div class="site-subtitle">Geography, Environment and Geomatics · University of Ottawa</div>
       </div>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
-          <li><a href="index.html">Main</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="people.html">People</a></li>
           <li><a href="research.html">Research</a></li>
-          <li><a href="infrastructure.html" class="active">Infrastructure</a></li>
+          <li><a href="infrastructure.html" class="active" aria-current="page">Infrastructure</a></li>
           <li><a href="network.html">Network</a></li>
         </ul>
       </nav>
@@ -40,6 +46,11 @@
   </header>
 
   <main class="container">
+    <div class="page-title">
+      <h1>Infrastructure</h1>
+      <p>The instruments, platforms and computing resources that support our fieldwork and image analysis.</p>
+    </div>
+
     <section>
       <h2>Instruments &amp; Sensors</h2>
       <p class="section-intro">
@@ -52,6 +63,7 @@
           <img
             src="images/cubert.jpg"
             alt="Cubert S185 SE FireFleye hyperspectral camera"
+            width="700" height="393" loading="lazy"
             class="instrument-image">
           <h3>Cubert S185 SE FireFleye hyperspectral camera</h3>
           <p>
@@ -66,6 +78,7 @@
           <img
             src="images/dji600.jpg"
             alt="DJI Matrice 600 Pro drone"
+            width="1200" height="800" loading="lazy"
             class="instrument-image">
           <h3>DJI Matrice 600 Pro</h3>
           <p>
@@ -80,6 +93,7 @@
           <img
             src="images/spectrometer.jpg"
             alt="Ocean Optics dual-channel spectrometer"
+            width="816" height="612" loading="lazy"
             class="instrument-image">
           <h3>Ocean Optics dual-channel spectrometer</h3>
           <p>
@@ -94,6 +108,7 @@
           <img
             src="images/boat.jpg"
             alt="Inflatable boat used for fieldwork"
+            width="644" height="644" loading="lazy"
             class="instrument-image">
           <h3>Inflatable boat</h3>
           <p>
@@ -130,8 +145,16 @@
 
   <footer>
     <div class="footer-inner">
-      <div>© <span id="year"></span> Shallow Water Earth Observation Laboratory</div>
-      <div>Infrastructure</div>
+      <div>
+        <div class="footer-title">Shallow Water Earth Observation Laboratory</div>
+        <div>Department of Geography, Environment and Geomatics<br>University of Ottawa, Ottawa, Canada</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="mailto:anders.knudby@uottawa.ca">anders.knudby@uottawa.ca</a></li>
+        <li><a href="https://scholar.google.com/citations?user=8RBANawAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+        <li><a href="https://www.uottawa.ca/faculty-arts/geography-environment-geomatics" target="_blank" rel="noopener noreferrer">Department website</a></li>
+      </ul>
+      <div class="footer-copy">© <span id="year"></span> Shallow Water Earth Observation Laboratory</div>
     </div>
   </footer>
   <script src="script.js"></script>

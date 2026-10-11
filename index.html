@@ -2,22 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shallow Water Earth Observation Laboratory – Main</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shallow Water Earth Observation Laboratory | University of Ottawa</title>
+  <meta name="description" content="The Shallow Water Earth Observation Laboratory (SWEOL) at the University of Ottawa, led by Dr. Anders Knudby, uses satellite, airborne and drone remote sensing to map bathymetry, benthic habitats and water quality in coastal and inland waters.">
+  <link rel="canonical" href="https://shallowwaterlab.com/">
+  <meta name="theme-color" content="#0b7285">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shallow Water Earth Observation Laboratory">
+  <meta property="og:title" content="Shallow Water Earth Observation Laboratory – University of Ottawa">
+  <meta property="og:description" content="The Shallow Water Earth Observation Laboratory (SWEOL) at the University of Ottawa, led by Dr. Anders Knudby, uses satellite, airborne and drone remote sensing to map bathymetry, benthic habitats and water quality in coastal and inland waters.">
+  <meta property="og:url" content="https://shallowwaterlab.com/">
+  <meta property="og:image" content="https://shallowwaterlab.com/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Shallow Water Earth Observation Laboratory, University of Ottawa">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shallow Water Earth Observation Laboratory – University of Ottawa">
+  <meta name="twitter:description" content="The Shallow Water Earth Observation Laboratory (SWEOL) at the University of Ottawa, led by Dr. Anders Knudby, uses satellite, airborne and drone remote sensing to map bathymetry, benthic habitats and water quality in coastal and inland waters.">
+  <meta name="twitter:image" content="https://shallowwaterlab.com/images/og-image.jpg">
+
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchOrganization",
+  "name": "Shallow Water Earth Observation Laboratory",
+  "alternateName": "SWEOL",
+  "url": "https://shallowwaterlab.com/",
+  "image": "https://shallowwaterlab.com/images/og-image.jpg",
+  "email": "anders.knudby@uottawa.ca",
+  "description": "The Shallow Water Earth Observation Laboratory (SWEOL) at the University of Ottawa, led by Dr. Anders Knudby, uses satellite, airborne and drone remote sensing to map bathymetry, benthic habitats and water quality in coastal and inland waters.",
+  "parentOrganization": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Ottawa",
+    "url": "https://www.uottawa.ca/"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ottawa",
+    "addressRegion": "ON",
+    "addressCountry": "CA"
+  },
+  "member": {
+    "@type": "Person",
+    "name": "Anders Knudby",
+    "jobTitle": "Professor",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Ottawa"
+    },
+    "sameAs": [
+      "https://scholar.google.com/citations?user=8RBANawAAAAJ&hl=en"
+    ]
+  },
+  "knowsAbout": [
+    "Satellite-derived bathymetry",
+    "Benthic habitat mapping",
+    "Water quality remote sensing",
+    "Change detection",
+    "Self-supervised learning for Earth observation",
+    "Satellite-based whale detection"
+  ]
+}
+  </script>
 </head>
 <body>
   <header>
     <div class="container site-header">
-      <div>
-        <div class="site-title">Shallow Water Earth Observation Laboratory</div>
-        <div class="site-subtitle">
-          Department of Geography, Environment and Geomatics, University of Ottawa
-        </div>
+      <div class="site-brand">
+        <a href="index.html" class="site-title">Shallow Water Earth Observation Laboratory</a>
+        <div class="site-subtitle">Geography, Environment and Geomatics · University of Ottawa</div>
       </div>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
-          <li><a href="index.html" class="active">Main</a></li>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
           <li><a href="people.html">People</a></li>
           <li><a href="research.html">Research</a></li>
           <li><a href="infrastructure.html">Infrastructure</a></li>
@@ -30,12 +91,12 @@
   <section class="hero">
     <div class="container">
       <div class="hero-inner">
-        <h1>Shallow Water Earth Observation Laboratory</h1>
+        <p class="hero-kicker">Shallow Water Earth Observation Laboratory · University of Ottawa</p>
+        <h1>Mapping shallow waters from space</h1>
         <p>
-          The Shallow Water Earth Observation Laboratory, led by Dr. Anders Knudby,
-          uses satellite and in&nbsp;situ observations to study shallow coastal and inland
-          waters. Our work focuses on satellite-derived bathymetry, habitat mapping,
-          water quality monitoring, and change detection in complex aquatic environments.
+          Led by Dr. Anders Knudby, we use satellite, airborne and in&nbsp;situ observations to
+          map and monitor shallow coastal and inland waters: their depth, their habitats and their
+          water quality, and how all of these change over time.
         </p>
         <div class="buttons">
           <a href="research.html" class="btn btn-primary">Explore our research</a>
@@ -43,6 +104,7 @@
         </div>
       </div>
     </div>
+    <p class="hero-credit">Satellite-derived bathymetry, Coral Harbour, Nunavut (Hodul et al., 2018). Imagery © DigitalGlobe.</p>
   </section>
 
   <main class="container">
@@ -58,29 +120,91 @@
     </section>
 
     <section>
+      <div class="section-head">
+        <h2>Research themes</h2>
+        <a href="research.html">All research →</a>
+      </div>
+      <p class="section-intro">Six themes connect our projects, from method development to operational applications.</p>
+      <div class="card-grid theme-grid">
+        <a class="card theme-tile" href="research.html">
+          <h3>Satellite-derived bathymetry</h3>
+          <p>Water depth from optical and lidar satellites, with a focus on the Canadian Arctic.</p>
+        </a>
+        <a class="card theme-tile" href="research.html">
+          <h3>Habitat mapping</h3>
+          <p>Kelp, seagrass, coral and other benthic habitats from imagery and field data.</p>
+        </a>
+        <a class="card theme-tile" href="research.html">
+          <h3>Water quality monitoring</h3>
+          <p>Optically active constituents and turbidity tracked through satellite time series.</p>
+        </a>
+        <a class="card theme-tile" href="research.html">
+          <h3>Change detection</h3>
+          <p>Multi-decadal archives used to quantify change in depth, habitat and water quality.</p>
+        </a>
+        <a class="card theme-tile" href="research.html">
+          <h3>Self-supervised learning</h3>
+          <p>Representation learning on unlabelled Earth observation data.</p>
+        </a>
+        <a class="card theme-tile" href="research.html">
+          <h3>Whale detection</h3>
+          <p>Satellite-based detection of North Atlantic right whales for conservation alerts.</p>
+        </a>
+      </div>
+    </section>
+
+    <section>
       <h2>Recent news</h2>
-      <ul>
+      <ul class="news-list">
+        <!-- Add new items at the top. Keep the month and year on each item. -->
+        <li class="has-image">
+          <div>
+            <span class="news-date">July 2026</span>
+            Anders Knudby, Neve Foreman, Galen Richardson and Mohsen Ansari attended the
+            <a href="https://www.isprs2026toronto.com/" target="_blank" rel="noopener noreferrer">ISPRS 2026 Congress in Toronto</a>.
+            Neve won both First Place and the People’s Choice Award in the IEEE GRSS Three Minute Thesis
+            competition for her talk on differentiating eelgrass and kelp with PRISMA hyperspectral imagery.
+          </div>
+          <img src="images/news-isprs2026.jpg" alt="Neve Foreman holding her two IEEE GRSS Three Minute Thesis certificates at ISPRS 2026" width="640" height="480" loading="lazy" class="news-image">
+        </li>
         <li>
-          In December 2024 and January 2025, two of our graduate students successfully defended their
+          <span class="news-date">December 2024 – January 2025</span>
+          Two of our graduate students successfully defended their
           PhD theses.
-          <strong><a href="https://www.beg.utexas.edu/people/kutalmis-saylam" target="_blank" rel="noreferrer">Dr. Kutalmis Saylam</a></strong>
+          <strong><a href="https://www.beg.utexas.edu/people/kutalmis-saylam" target="_blank" rel="noopener noreferrer">Dr. Kutalmis Saylam</a></strong>
           now works at the University of Texas, and
-          <strong><a href="https://yulunwu8.github.io/" target="_blank" rel="noreferrer">Dr. Yulun Wu</a></strong>
+          <strong><a href="https://yulunwu8.github.io/" target="_blank" rel="noopener noreferrer">Dr. Yulun Wu</a></strong>
           is doing a postdoc at the University of Toronto.
         </li>
-        <li>
-          In July 2026, many members of the lab are going to
-          <a href="https://www.isprs2026toronto.com/" target="_blank" rel="noreferrer">ISPRS 2026 in Toronto</a>.
-          See you there!
-        </li>
       </ul>
+    </section>
+    <section>
+      <div class="callout">
+        <div>
+          <h2>Interested in joining the lab?</h2>
+          <p>
+            We regularly welcome new MSc and PhD students, postdoctoral fellows and visiting
+            researchers with an interest in aquatic remote sensing. If our work interests you,
+            get in touch.
+          </p>
+        </div>
+        <a class="btn btn-primary" href="mailto:anders.knudby@uottawa.ca">Contact Anders Knudby</a>
+      </div>
     </section>
   </main>
 
   <footer>
     <div class="footer-inner">
-      <div>© <span id="year"></span> Shallow Water Earth Observation Laboratory</div>
-      <div>Department of Geography, Environment and Geomatics, University of Ottawa</div>
+      <div>
+        <div class="footer-title">Shallow Water Earth Observation Laboratory</div>
+        <div>Department of Geography, Environment and Geomatics<br>University of Ottawa, Ottawa, Canada</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="mailto:anders.knudby@uottawa.ca">anders.knudby@uottawa.ca</a></li>
+        <li><a href="https://scholar.google.com/citations?user=8RBANawAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+        <li><a href="https://www.uottawa.ca/faculty-arts/geography-environment-geomatics" target="_blank" rel="noopener noreferrer">Department website</a></li>
+      </ul>
+      <div class="footer-copy">© <span id="year"></span> Shallow Water Earth Observation Laboratory</div>
     </div>
   </footer>
   <script src="script.js"></script>
