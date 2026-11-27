@@ -520,6 +520,32 @@ section h2 {
   border: 1px solid var(--border);
 }
 
+.news-story p {
+  margin: 0 0 0.75rem;
+}
+
+.news-story summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent-strong);
+  margin-bottom: 0.75rem;
+  width: fit-content;
+}
+
+.news-story summary:hover {
+  text-decoration: underline;
+}
+
+.news-story details[open] summary {
+  display: none;
+}
+
+.news-story .news-byline {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
 .news-date {
   display: block;
   font-size: 0.8rem;
