@@ -520,6 +520,16 @@ section h2 {
   border: 1px solid var(--border);
 }
 
+/* News item with a small round portrait instead of a landscape photo */
+.news-list li.has-portrait {
+  grid-template-columns: 1fr 112px;
+  align-items: center;
+}
+
+.news-list li.has-portrait .news-image {
+  border-radius: 999px;
+}
+
 .news-story p {
   margin: 0 0 0.75rem;
 }
@@ -711,5 +721,10 @@ footer a {
 
   .news-image {
     max-width: 320px;
+  }
+
+  .news-list li.has-portrait {
+    grid-template-columns: 1fr 72px;
+    align-items: start;
   }
 }
